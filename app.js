@@ -570,7 +570,7 @@ const PROJECTS = {
                     ),
 
                 downloads: [
-                    { labelAr: "Windows", labelEn: "Windows", url: "https://example.com/windows" },
+                    { labelAr: "Windows", labelEn: "Windows", url: "https://apps.microsoft.com/detail/9NBT7PTJB24T?hl=ar-eg&gl=EG&ocid=pdpshare" },
                     { labelAr: "macOS", labelEn: "macOS", url: "" },
                 ],
             },
