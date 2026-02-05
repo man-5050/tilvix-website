@@ -561,7 +561,7 @@ const PROJECTS = {
                     ar: "نسخة الديسكتوب لإدارة أسرع وتقارير أقوى.",
                     en: "Desktop build with faster admin and stronger reports."
                 },
-                video: { type: "youtube", youtubeId: "EkvUFDevMlM" },
+                video: { type: "youtube", youtubeId: "jAG28XExKj8" },
                 images: []
                     .concat(
                         imgSeqPad("assets/project/my_bills/images/desktop/screens", 1, 11, "png", 2),
