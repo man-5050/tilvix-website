@@ -89,7 +89,7 @@ document.addEventListener("click", (e) => {
 $("#scrollTop").addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 
 // ===== Contact form -> WhatsApp (LIVE) =====
-const WA_NUMBER = "201142076661";
+const WA_NUMBER = "201283713447";
 const wa = document.getElementById("waLink");
 if (wa) wa.href = `https://wa.me/${WA_NUMBER}`;
 
@@ -533,7 +533,7 @@ const PROJECTS = {
             {
                 labelAr: "تواصل واتساب 💚",
                 labelEn: "WhatsApp 💚",
-                url: "https://wa.me/201142076661"
+                url: "https://wa.me/201283713447"
             },
         ],
 
@@ -746,29 +746,17 @@ function renderVideo(videoObj) {
         const id = extractYouTubeId(videoObj.youtubeId);
         if (!id) return;
 
-        const params = new URLSearchParams({
-            controls: "0",
-            fs: "0",
-            modestbranding: "1",
-            rel: "0",
-            iv_load_policy: "3",
-            disablekb: "1",
-            playsinline: "1",
-        });
-
         tvideoWrap.innerHTML = `
-    <div class="ratio">
-      <iframe
-        src="https://www.youtube-nocookie.com/embed/${id}?${params.toString()}"
-        title="Project video"
-        allow="autoplay; encrypted-media; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-    </div>
-  `;
+      <div class="ratio">
+        <iframe
+          src="https://www.youtube.com/embed/${id}"
+          title="Project video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    `;
         return;
     }
-
 
     // MP4 / WebM
     if (videoObj.mp4Url) {
